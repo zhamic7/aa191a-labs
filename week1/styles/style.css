@@ -1,6 +1,6 @@
 /* The * selects everything and acts as a global reset to ensure consistency across browsers */
 * {
-    font-family: 'Courier New', monospace;
+    font-family: 'Times New Roman', serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,12 +8,12 @@
 
 /* Sets the overall background and ensures the content fits the screen height */
 html {
-    background-color: #ffcbcd;
+    background-color: #ffe0e1;
 }
 
 html,
 body {
-    height: 80vh;
+    height: 125vh;
     padding: 1rem;
 }
 
@@ -30,7 +30,7 @@ body {
 
 main {
     display: grid;
-    grid-template-areas: "portfolio map";
+    grid-template-areas: "col1 col2";
     grid-template-columns: 1fr 1fr;
 }
 
@@ -39,22 +39,118 @@ header {
     grid-area: header;
 }
 
+h1 {
+    padding: 10px;
+}
+
+.go-home:link {
+    color:#ec3c63;
+    text-decoration: none;
+}
+.go-home:visited {
+    color:#ec3c63;
+    text-decoration: none;
+}
+.go-home:hover {
+    color:#ec3c63;
+    text-decoration: underline;
+}
+.go-home:active {
+    color:#ec3c63;
+    text-decoration: underline;
+}
+
 main {
     grid-area: main;
 }
 
-.portfolio {
-    grid-area: portfolio;
+p {
+    font-size: 2.3vh;
+    line-height: 1.15;
+}
+
+.col1 {
+    grid-area: col1;
+    padding-right:10px;
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 10px;
+}
+
+#avatar {
+    border:solid;
+    border-bottom: none;
+    border-width: 2ch;
+    border-color: #f5c7c8;
 }
 
 img {
-    width: 300px;
+    width: 400px;
     height: auto;
 }
 
+#description {
+    border:solid;
+    border-top: none;
+    border-width: 2ch;
+    border-color: #f5c7c8;
+
+    margin-right:10px;
+    padding: 15px; 
+    background-color: #f5c7c8;
+    flex: 1 1 auto;
+    width:400px;
+}
+
+ul {
+    padding-left: 30px;
+}
+
+ol {
+    padding-left: 30px;
+}
+
+li {
+    font-size: 2.3vh;
+}
+
+.col2 {
+    grid-area: col2;
+    padding-right:10px;
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 10px;
+}
+
+.title {
+    margin-bottom: 10px;
+}
+
 #map {
-    grid-area: map;
     height: 90vh;
+    border-style: solid;
+    border-width: 0.25ch;
+}
+
+.caption {
+    margin-top: 10px;
+    padding: 15px; 
+    background-color: white;
+    width:736px;
+    flex: 1 1 auto;
+}
+
+a:link {
+    color:#0090ce;
+}
+a:visited {
+    color:#0090ce;
+}
+a:hover {
+    color:white;
+}
+a:active {
+    color:white;
 }
 
 footer {

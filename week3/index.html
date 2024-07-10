@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AA191A Functional Events Lab</title>
+
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+
+    <!-- MapLibreGL's css-->
+    <link rel="stylesheet" href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" />
+
+    <!-- MapLibreGL's JavaScript-->
+    <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>ABOUT ME! ^_< ☆</h1>
+    </header>
+
+    <main>
+
+        <!-- hint: majority of your lab assignment can go here -->
+        <div class="col1">
+            <!-- Portfolio content goes here -->
+            <img id="avatar" src="images/avatar.jpg" alt="A photo of the site creator">
+            <div id="description">
+                <p> Hi! My name is Michelle, and I'm currently a junior at UCLA majoring in 
+                    Computer Science as well as double minoring in Digital Humanities and Philosophy.
+                    One of my goals is to become capable of creating ethical software 
+                    that can be used to improve critical infrastructure in society,
+                    and I am looking forward to how the content covered in class as well as the course project
+                    will better inform me in achieving this!
+                </p>
+                <br>
+                <p> In my free time, I like to draw and watch anime. My favorite artists are: 
+                    <ul>
+                        <li><a href="https://x.com/3c5u3r5r3y5/media">Harukawa Sango</a> (manga artist)</li>
+                        <li><a href="https://x.com/sotonami/media">Ishida Sui</a> (manga artist)</li>
+                        <li><a href="https://butdoesitfloat.com/Since-the-world-drifts-into-delirium-we-must-adopt-a-delirious-point">Jean Giraud</a>, a.k.a. Moebius (bande dessinée artist)</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="col2">
+            <div class="title"><h2>WHERE I WENT!</h2></div>
+            <div id="map">
+                <!-- Map will be inserted here -->
+            </div>
+            
+        </div>
+
+        <div class="col3">
+            <div class="title" style="visibility: hidden;"><h2>null</h2></div>
+            <div id="buttons"></div> 
+        </div>
+
+    </main>
+
+    <div id="footer">
+        <p>COPYRIGHT 2024</p>
+    </div>
+
+    <script src="js/init.js"></script>
+
+</body>
+
+</html>

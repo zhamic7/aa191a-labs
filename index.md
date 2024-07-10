@@ -1,3 +1,4 @@
 directory
-- [week 1](https://zhamic7.github.io/aa191a-labs/week1)
-- [week 2](https://zhamic7.github.io/aa191a-labs/week2)
+- [week 1](./week1/index.html)
+- [week 2](./week2/index.html)
+- [week 3](./week3/index.html)

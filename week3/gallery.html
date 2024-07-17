@@ -23,13 +23,13 @@
         
         <!-- hint: majority of your lab assignment can go here -->
         <div class="col1">
-            <button onclick="openPopup(1)" class="placeholder-img"></button>
-            <button onclick="openPopup(2)" class="placeholder-img"></button>
+            <button onclick="openPopup(1)" class="placeholder-img" style="background-image:url(images/img_001.jpg);"></button>
+            <button onclick="openPopup(2)" class="placeholder-img" style="background-image:url(images/img_002.jpg);"></button>
         </div>
 
         <div class="col2">
-            <button onclick="openPopup(3)" class="placeholder-img"></button>
-            <button onclick="openPopup(4)" class="placeholder-img"></button>
+            <button onclick="openPopup(3)" class="placeholder-img" style="background-image:url(images/img_003.jpg);"></button>
+            <button onclick="openPopup(4)" class="placeholder-img" style="background-image:url(images/img_004.jpg);"></button>
         </div>
     </main>
 
@@ -49,10 +49,10 @@
     function createImage(img_id) {
         const newImage = document.createElement("img");
         newImage.id = "display-img";
-        newImage.src = "images/image.jpg";        
-        newImage.setAttribute("alt", "Placeholder image " + img_id);
+        let image_source = "images/img_00" + img_id + ".jpg";
+        newImage.src = image_source;        
+        newImage.setAttribute("alt", "Location image");
         document.getElementById("content").appendChild(newImage);
-        
     }
 
     function openPopup(img_id) {

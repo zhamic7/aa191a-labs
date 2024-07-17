@@ -1,0 +1,88 @@
+@import "style.css";
+
+/* Defines the page layout using a grid */
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "col1 col2";
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Assigns each major section to a part of the grid */
+.col1 {
+    grid-area: col1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right:10px;
+}
+
+.col2 {
+    grid-area: col2;
+    display: flex;
+    flex-direction: column;
+    padding-left:10px;
+}
+
+.placeholder-img {
+    width: 75%;
+    height: 100%;
+    background: url("../images/image.jpg");
+    background-size: cover;
+    background-position: center;
+
+    border: none;
+    margin:10px;
+}
+
+#popup {
+    visibility: hidden;
+    position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.8);
+}
+
+.closeButton {
+    margin-right: 0;
+    width: 20px;
+    margin: 5px;
+    background-color: white;
+    border: solid;
+    border-width: 2px;
+
+    font-weight:bold;
+}
+.closeButton:hover {
+    color: #0088ff;
+    border-color:#0088ff;
+}
+
+#content {
+    width:75%;
+    height:75%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#display-img {
+    height: 100%;
+    width: auto;
+    margin-bottom: 2.5%;
+    align-self: center;
+}

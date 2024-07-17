@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AA191A GeoJSONs and Loops Lab</title>
+
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="styles/gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>GALLERY! ^_< ☆</h1>
+        <a href="index.html">go back</a>
+    </header>
+
+    <main>
+        
+        <!-- hint: majority of your lab assignment can go here -->
+        <div class="col1">
+            <button onclick="openPopup(1)" class="placeholder-img"></button>
+            <button onclick="openPopup(2)" class="placeholder-img"></button>
+        </div>
+
+        <div class="col2">
+            <button onclick="openPopup(3)" class="placeholder-img"></button>
+            <button onclick="openPopup(4)" class="placeholder-img"></button>
+        </div>
+    </main>
+
+    <div id="popup">
+        <div id="content">
+            <button class="closeButton" onclick="closePopup()">X</button>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>COPYRIGHT 2024</p>
+    </div>
+
+</body>
+
+<script>
+    function createImage(img_id) {
+        const newImage = document.createElement("img");
+        newImage.id = "display-img";
+        newImage.src = "images/image.jpg";        
+        newImage.setAttribute("alt", "Placeholder image " + img_id);
+        document.getElementById("content").appendChild(newImage);
+        
+    }
+
+    function openPopup(img_id) {
+        let hash = "#image_" + img_id;
+        window.location = hash;
+        document.getElementById("popup").style.visibility = "visible"; 
+        createImage(img_id);
+    }
+
+    function closePopup() {
+        document.getElementById("popup").style.visibility = "hidden";
+        window.location = "";
+        document.getElementById("display-img").remove();
+    }
+
+    if (window.location.hash) {
+        let image_id = window.location.hash;
+        image_id = image_id.charAt(image_id.length - 1);
+        openPopup(image_id);
+    }
+</script>
+
+</html>

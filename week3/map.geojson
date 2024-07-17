@@ -1,0 +1,69 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Zhujiajiao",
+          "district": "Qingpu District",
+          "city": "Shanghai",
+          "desc": "Super pretty water town with lots of historic architecture and yummy food."
+        },
+        "geometry": {
+          "coordinates": [
+            121.05079163809194,
+            31.113422651979562
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Leifeng Pagoda",
+          "district": "Xihu District",
+          "city": "Hangzhou",
+          "desc": "Originally a Buddhist tower that has been rebuilt over the years. I sadly didn't have time to go see the view from the topmost level."
+        },
+        "geometry": {
+          "coordinates": [
+            120.14494204232636,
+            30.233352123539035
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Humble Administrator's Garden",
+          "district": "Gusu District",
+          "city": "Suzhou",
+          "desc": "A part of the Classical Gardens of Suzhou. The lotus ponds were really pretty!"
+        },
+        "geometry": {
+          "coordinates": [
+            120.62533357835912,
+            31.325210071401756
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Nanjing Fuzimiao",
+          "district": "Qinhuai District",
+          "city": "Nanjing",
+          "desc": "A Confucius Temple where the imperial exam was held. There's a museum on the same street with a cheatsheet from the Qing Dynasty on display. As expected, the handwriting is tiny, haha."
+        },
+        "geometry": {
+          "coordinates": [
+            118.78434984973381,
+            32.02188820240707
+          ],
+          "type": "Point"
+        }
+      }
+    ]
+  }

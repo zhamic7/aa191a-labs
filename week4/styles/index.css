@@ -1,0 +1,99 @@
+@import "style.css";
+
+/* Defines the page layout using a grid */
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "col1 col2";
+    grid-template-columns: 1.5fr 3fr;
+}
+
+/* Assigns each major section to a part of the grid */
+.col1 {
+    grid-area: col1;
+    padding-right: 10px;
+    display: flex;
+    flex-flow: column;
+}
+
+#survey {
+    border: solid;
+    border-top: none;
+    border-width: 2ch;
+    border-color: #ffb4c4;
+
+    margin-right: 10px;
+    padding-top: 10px;
+    background-color: #ffb4c4;
+    flex: 1 1 auto;
+}
+
+.col2 {
+    grid-area: col2;
+    padding-right: 10px;
+    display: flex;
+    flex-flow: column;
+}
+
+.title {
+    margin-bottom: 10px;
+}
+
+#map {
+    flex: 1 1 auto;
+    border-style: solid;
+    border-width: 0.25ch;
+}
+
+.mapPopup {
+    background-color: #f8f9fa;
+    color: #212529;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.popupTitle {
+    border: solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-width: 1px;
+    border-color: black;
+
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+#legend {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+    z-index: 1;
+
+    width: 250px;
+    background: #fff;
+    border: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 5px;
+    color: black;
+    padding: 10px;
+    height: 180px;
+}
+
+.legend-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}

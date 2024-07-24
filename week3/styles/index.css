@@ -41,23 +41,6 @@ img {
     width:400px;
 }
 
-a:link {
-    color:#0088ff;
-    text-decoration-line: none;
-}
-a:visited {
-    color:#0088ff;
-    text-decoration-line: none;
-}
-a:hover {
-    color: white;
-    text-decoration-line: none;
-}
-a:active {
-    color:white;
-    text-decoration-line: none;
-}
-
 .col2 {
     grid-area: col2;
     padding-right:10px;

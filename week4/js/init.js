@@ -122,5 +122,4 @@ for (const [key, value] of Object.entries(legend_colors)) {
                                 <p>${key}</p>
                             </div>`);
 }
-console.log(legend);
 document.getElementById("legend").innerHTML = legend;
